@@ -1,3 +1,4 @@
 select * 
-from Student;
+from Employee;
+
  
