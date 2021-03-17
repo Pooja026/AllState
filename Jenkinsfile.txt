@@ -23,11 +23,12 @@ agent any
   not{
   branch "main"
   }
-  }
+  
   steps
   {
   echo "hello"
   }
   }
+}
 }
 }
