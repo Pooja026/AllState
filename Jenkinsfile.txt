@@ -1,0 +1,38 @@
+pipeline
+{
+agent any
+stages
+{
+stage('Build')
+{
+steps
+{
+echo "Building a project"
+bat "mvn clean"
+}
+}
+stage('Test')
+{
+steps
+{
+echo "Testing a project"
+bat "mvn test"
+}
+}
+stage('Compile')
+{
+steps
+{
+echo "compiling a project"
+bat "mvn compile"
+}
+}
+stage('Deploy')
+{
+steps
+{
+echo "Deploying a project"
+}
+}
+}
+}
